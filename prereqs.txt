@@ -8,5 +8,9 @@ curl -Lo kubectl https://dl.k8s.io/release/$(curl -s -L https://dl.k8s.io/releas
 chmod +x ./kubectl
 sudo mv ./kubectl /usr/local/bin/kubectl
 =========================================
-
+## helm installation on Linux
+cd /tmp
+wget https://get.helm.sh/helm-v3.9.3-linux-amd64.tar.gz
+tar xvf helm-v3.9.3-linux-amd64.tar.gz
+sudo mv linux-amd64/helm /usr/local/bin
 

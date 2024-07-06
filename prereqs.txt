@@ -13,4 +13,13 @@ cd /tmp
 wget https://get.helm.sh/helm-v3.9.3-linux-amd64.tar.gz
 tar xvf helm-v3.9.3-linux-amd64.tar.gz
 sudo mv linux-amd64/helm /usr/local/bin
+=========================================
+## Jenkins installation on Linux
+sudo apt install openjdk-11-jdk -y
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc   https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
+echo "deb [signed-by=/usr/share/keyrings/jenkins-keyring.asc]"   https://pkg.jenkins.io/debian-stable binary/ | sudo tee   /etc/apt/sources.list.d/jenkins.list > /dev/null
+sudo apt-get update
+sudo apt-get install jenkins
+systemctl status jenkins
+=========================================
 
